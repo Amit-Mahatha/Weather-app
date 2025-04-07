@@ -16,7 +16,8 @@ function getDayName(dateStr) {
     }
   
     const apiKey = '1a2d62d4005c437498e145857250704';
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5`;
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5`;
+
   
     try {
       const res = await fetch(url);
