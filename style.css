@@ -1,0 +1,120 @@
+:root {
+    --bg-light: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    --bg-dark: url('https://images.unsplash.com/photo-1600200844008-3b62f5c8c3a5');
+    --card-bg-light: rgba(255, 255, 255, 0.85);
+    --card-bg-dark: rgba(0, 0, 0, 0.6);
+    --text-light: #333;
+    --text-dark: #eee;
+    --header-light: #fff;
+    --header-dark: #fff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg-light) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--header-light);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  body.dark {
+    background: var(--bg-dark) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--header-dark);
+  }
+  
+  body.dark .forecast-card {
+    background-color: var(--card-bg-dark);
+    color: var(--text-dark);
+  }
+  
+  .forecast-card {
+    background-color: var(--card-bg-light);
+    color: var(--text-light);
+    border-radius: 15px;
+    padding: 20px;
+    width: 160px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .forecast-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .forecast-card img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px #333;
+  }
+  
+  .search-box {
+    margin: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .toggle-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .forecast-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .day {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2196f3;
+  }
+  
+  .temp {
+    font-size: 22px;
+    margin: 5px 0;
+  }
+  
+  .condition {
+    font-weight: bold;
+  }
+  
+  .info {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  
